@@ -1,0 +1,17 @@
+ce am primit
+1) definirea clasei (constructor, copy constructor, destructor, getter, setter, string* ca field dinamic)
+2) operator +=
+3) operator ==
+4) sa fac o functie care sa adauge un string in string*
+5) "is a" relationship sa adaug un field nou si un constructor pentru asta
+6) sa citesc un obiect dintr-un fisier
+7) polimorfism sa explic ce e, i-am descris overloading si overriding cu late binding si early binding, si i-am si exemplificat cu un vector de pointeri
+
+la final boja intreaba size-ul unei variabile gen pe mine m-a intrebat cat e un double
+de asemenea s-a vorbit in romgleza, adica termenii in engleza si in rest oral in romana
+
+50 de min
+si il mai chemam eu din cand in cand
+nu venea expres la tine sa vada ce faci
+
+am auzit ca s-a schimbat din 2023, nu stiu, verificati cu aia de an mai mare
