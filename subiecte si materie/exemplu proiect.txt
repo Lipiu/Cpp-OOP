@@ -1,2 +1,2 @@
-eu am facut proiectul individual, ticketing app, aici:
+eu am facut proiectul individual, ticketing app, aici: (asta nu e proiectul meu btw)
 https://github.com/v4n00/mti-ticketing-app
