@@ -22,5 +22,18 @@ int main(){
 
     region.displayWeather();
 
+    cout << endl;
+
+
+    //testing postfix ++ operator
+    cout << "Testing operator ++: \n";
+
+    Weather testOperator;
+    testOperator.setDate("15/04/2023");
+
+    Weather old = testOperator++;
+    cout << "Old date: " << old.getDate() << endl;
+    cout << "New date: " << testOperator.getDate();
+
     return 0;
 }
