@@ -15,9 +15,8 @@ Implement a method that allows you to add an object to your collection.You can u
 (1p) Explain and exemplify the concept of “dangling pointer” using a pointer to one of the previously defined classes.
 */
 
-#define _CRT_SECURE_NO_WARNINGS
+#pragma once
 #include <iostream>
-#include <string>
 #include <string.h>
 using namespace std;
 
@@ -55,14 +54,12 @@ public:
     }
 
     //getters
-    float getPrice(){
+    float getPrice() const{
         return this->entryPrice;
     }
 
-    char* getDate(){
-        char* copy = new char[strlen(this->date) + 1];
-        strcpy(copy, this->date);
-        return copy;
+    const char* getDate(){
+        return this->date;
     }
 
     //setters
@@ -85,21 +82,13 @@ public:
         int c1,c2;
         c1 = atoi(&(this->date[6]));
         c2 = atoi(&(other.date[6]));
-        if(c1 < c2){
-            cout << "First conference is older\n";
-            return true;
-        }
-        else{
-            cout << "Second conference is older\n";
-            return false;
-        }
+        
+        return c1 < c2;
     }
 
-    friend void operator+ (float price, Conference& c);
+    friend void operator+(float price, Conference& c) {
+        c.setPrice(c.getPrice() + price);
+    }
 };
 
 int Conference::idCounter = 0;
-
-void operator+ (float price, Conference& c){
-    c.entryPrice += price;
-}
