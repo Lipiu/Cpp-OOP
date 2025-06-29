@@ -10,9 +10,9 @@ int main(){
     
     cout << "\nTesting overloaded + operator:\n";
     Conference c2(38, "20/04/2025");
-    if(c1 < c2)
-        cout << "First conference is older\n";
-    else
-        cout << "Second conference is older\n";
+
+    //testing < operator (comparing the year)
+    c1 < c2;
     
+    return 0;
 }

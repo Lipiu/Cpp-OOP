@@ -85,10 +85,14 @@ public:
         int c1,c2;
         c1 = atoi(&(this->date[6]));
         c2 = atoi(&(other.date[6]));
-        if(c1 < c2)
+        if(c1 < c2){
+            cout << "First conference is older\n";
             return true;
-        else
+        }
+        else{
+            cout << "Second conference is older\n";
             return false;
+        }
     }
 
     friend void operator+ (float price, Conference& c);
