@@ -80,7 +80,7 @@ public:
     //overloading < to compare two video conferences
     bool operator<(const Conference& other){
         int c1,c2;
-        c1 = atoi(&(this->date[6]));
+        c1 = atoi(&(this->date[6])); //date[6] because it will take only the year and compare
         c2 = atoi(&(other.date[6]));
         
         return c1 < c2;

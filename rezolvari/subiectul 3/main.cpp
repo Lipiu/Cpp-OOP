@@ -17,17 +17,29 @@ int main(){
 
     //testing < operator (comparing the year)
     if(c1 < c2){
-        cout << "First conference is older!" << endl;
+        cout << "\nFirst conference is older!" << endl;
     }
     else{
-        cout << "Second conference is older!" << endl;
+        cout << "\nSecond conference is older!" << endl;
     }
 
-    cout << "\n\nTesting HandleConference class" << endl;
+    cout << "\nTesting HandleConference class" << endl;
     HandleConference manager;
     manager.add_conference(c1);
     manager.add_conference(c2);
     manager.display_conferences();
+
+    cout << endl;
+
+    //explaining the dangling pointer concept
+    cout << "Dangling pointer test:" << endl;
+    Conference* conf_ptr = new Conference(50, "10/10/2023");
+    cout << "Price before deletion of conf_ptr: " << conf_ptr->getPrice();
+
+    delete conf_ptr;
+
+    cout << "\nTrying to access deleted object: " << endl;
+    cout << conf_ptr->getPrice() << endl;
     
     return 0;
 }
