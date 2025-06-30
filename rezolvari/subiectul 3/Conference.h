@@ -86,8 +86,15 @@ public:
         return c1 < c2;
     }
 
+    //overloading + operator
     friend void operator+(float price, Conference& c) {
         c.setPrice(c.getPrice() + price);
+    }
+
+    //overloading << (ostream operator)
+    friend ostream& operator<<(ostream& os, const Conference& conference){
+        os << "ID: " << conference.id << " | " << "Date: " << conference.date << " | " << "Price: " << conference.entryPrice;
+        return os;
     }
 };
 
