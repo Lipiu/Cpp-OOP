@@ -12,6 +12,12 @@ int main(){
     lib.add_book(b1);
     lib.add_book(b2);
     lib.display_info();
+    /*
+    SAU
+    std::cout << b1 << std::endl;
+    std::cout << b1 << std::endl;
+    ca n-am dat overload degeaba la <<, cum vrei tu boala mea!!!!
+    */
 
     //operator +
     std::cout << "\nTesting operator + " << std::endl;
