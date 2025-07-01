@@ -1,6 +1,8 @@
 #pragma once
 #define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
 #include <string.h>
+//#include <va rog ajutati-ma nu mai suport>
 
 class Book{
 private:
@@ -107,7 +109,14 @@ public:
     friend bool operator<(Book& book1, Book& book2){
         return book1.number_of_pages < book2.number_of_pages;
     }
+
+    friend std::ostream& operator<<(std::ostream& os, const Book& book) {
+        os << "Title: " << (book.title ? book.title : "(no title)") << " | "
+           << "Author: " << (book.author ? book.author : "(no author)") << " | "
+           << "Number of pages: " << book.number_of_pages << " | "
+           << "Price: " << book.price;
+        return os;
+    }
 };
 
 int Book::book_counter_by_id = 0;
-
