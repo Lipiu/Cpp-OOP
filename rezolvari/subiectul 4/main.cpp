@@ -18,5 +18,9 @@ int main(){
     UpgradedPrinter up;
     up.my_method();
 
+    cout << "\nTesting operator cast to float:" << endl;
+    float fahr_temp = static_cast<float>(p1);
+    cout << "Temperature in fahrenheit: " << fahr_temp;
+
     return 0;
 }
