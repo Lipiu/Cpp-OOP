@@ -17,7 +17,21 @@ public:
         this->name = name;
     }
 
+    //If the operator is defined in the class and the first parameter is an object we dont specify that object because it is specified by default
+    //IN CASE WE HAVE OBJECT AS FIRST PARAMETER WE DONT NEED TO WRITE IT IN THE FUNCTION HEADER
+    // and we can write the operator here without friend instead of writing globally
+
+    // = operator is always inside the class
+    void operator=(const Faculty f){
+        //test to avoid self assignemnt
+        if(this == &f)
+            return;
+    }
+
+    //friend only in case we dont have getters/setters
     friend void operator<<(ostream& os, Faculty f);
+    friend Faculty operator+(int value, Faculty f1);
+    friend string operator*(int value, Faculty f);
 };
 
 //global to avoid the extra parameter "this" from the class
@@ -26,8 +40,15 @@ void operator<<(ostream& os, Faculty f){ //pass by reference because ostream is 
     os << "Number of students: " << f.no_students;
 }
 
+string operator*(int value, Faculty f){
+    
+}
+
 Faculty operator+(int value, Faculty f1){
-     
+     Faculty copy = f1;
+     f1.no_students += value;
+
+     return copy;
 }
 
 int main(){
@@ -89,4 +110,5 @@ int main(){
     //cast operator -> always ask for explicit form, never implicit
     // int no_students = (int)csie; //explicit cast operator
 
+    return 0;
 }
