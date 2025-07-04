@@ -97,9 +97,11 @@ public:
         }
     }
 
-    friend void operator+(float price, Movie& m){
-        m.set_price(m.get_price() + price);
-    }
+    friend void operator+(float price, Movie& m);
 };
+
+void operator+(float price, Movie& m){
+    m.set_price(m.get_price() + price);
+}
 
 int Movie::movie_counter = 0;

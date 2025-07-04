@@ -1,2 +1,0 @@
-Title: OOP | Points for each requirement: 1 2 3 | Exam date: 08/07/2025 | Requirements: OOP Basics
-Title: Java | Points for each requirement: 1 2 3 | Exam date: 09/07/2025 | Requirements: TCP/UDP, Multithreading
