@@ -50,7 +50,8 @@ int main(){
 
     c.check_name("John");
 
-    c.calculatePopularityIndex();
+    double popularity = c.calculatePopularityIndex();
+    cout << "Popularity index: " << popularity << endl;
 
     return 0;
 }

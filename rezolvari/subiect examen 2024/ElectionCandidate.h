@@ -120,17 +120,23 @@ public:
     }
 
     double calculatePopularityIndex(){
-        double weight = 0.0;
-        double popularityIndex = 0.0;
-        if(this->party == 0)
-            weight = 1.5;
-        else if(this->party == 1)
-            weight = 1.2;
-        else
-            weight = 1.0;
+        double weight = 1.0;
         
-        popularityIndex = votes * weight;
-        return popularityIndex;
+        switch(party){
+            case Independent:
+                weight = 1.5;
+                break;
+            case Democrat:
+                weight = 1.2;
+                break;
+            case Republican:
+                weight = 1.0;
+                break;
+            default:
+                throw "Invalid field";
+                break;
+        }
+        return votes * weight;
     }
 };
 
