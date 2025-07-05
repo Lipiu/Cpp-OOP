@@ -1,0 +1,4 @@
+Exam title: OOP
+Requirements: 3
+Number of points for each requirement: 1 2 3 
+Exam date: 08/07/2025
