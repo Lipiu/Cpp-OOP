@@ -2,7 +2,7 @@
 
 * **is a:** -> `Inheritance`
     * **Definition:** A derived class `is a` specialized version of its base class.
-![alt text](image.png)
+![alt text](is_a.png)
 
 ##
 
