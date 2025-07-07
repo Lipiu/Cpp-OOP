@@ -24,8 +24,10 @@ public:
         cout << "List of video calls:" << endl;
         for(int i = 0; i < list.size(); i++){
             cout << "Video call #" << (i+1) << endl;
+            char* temp_name = list[i].get_name();
             if(list[i].get_name() != nullptr){
-                cout << "Name of the video conference: " << list[i].get_name() << endl;
+                cout << "Name of the video conference: " << temp_name << endl;
+                delete[] temp_name;
             }
             cout << "Platform used: " << list[i].get_platform_used() << endl;
             cout << "Start time (day): " << list[i].get_start_time() << endl;
