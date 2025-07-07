@@ -77,8 +77,6 @@ public:
         return *this;
     }
 
-    friend ostream& operator<<(ostream& os, const Candidate& c);
-
     Candidate& operator++(){
         this->votes += 1;
         return *this;
@@ -138,9 +136,11 @@ public:
         }
         return votes * weight;
     }
+
+     friend ostream& operator<<(ostream& os, Candidate c);
 };
 
-ostream& operator<<(ostream& os, const Candidate& c){
+ostream& operator<<(ostream& os, Candidate c){
     os << "Candidate name: " << c.name << " | " << "Candidate party: ";
     if(c.party == 0){
         cout << "Independent";
