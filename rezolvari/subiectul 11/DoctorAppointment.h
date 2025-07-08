@@ -56,12 +56,14 @@ public:
         }
     }
 
+    //postfix
     Appointment operator++(int){
         Appointment copy = *this;
         this->date++;
         return copy;
     }
 
+    //prefix
     Appointment operator++(){
         ++date;
         return *this;
