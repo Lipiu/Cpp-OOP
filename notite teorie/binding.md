@@ -19,8 +19,8 @@
 * **Mechanism:**
     * The compiler knows exactly which function to call based on the static type of the expression, and it emits a direct call instruction (or inlines the code) into the object file.
 ##
-**EXAMPLE:**
-#include <iostream>
+**EXAMPLE:**\
+#include <iostream>\
 struct Base {\
     void foo() { std::cout << "Base::foo\n"; }\
 };
