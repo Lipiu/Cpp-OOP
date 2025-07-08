@@ -142,6 +142,7 @@ public:
         return this->age < s.age;
     }
 
+    //operator =
     Student& operator=(const Student& other){
         if(this != &other){
             delete[] this->name;
@@ -169,6 +170,7 @@ public:
         return *this;
     }
 
+    //operator <<
     friend ostream& operator<<(ostream& os, const Student& s);
 };
 
