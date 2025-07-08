@@ -90,6 +90,18 @@ public:
         return this->age;
     }
 
+    int get_no_grades(){
+        return this->no_grades;
+    }
+
+    int* get_grades(){
+        int* copy = new int[this->no_grades];
+        for(int i = 0; i < this->no_grades; i++){
+            copy[i] = this->grades[i];
+        }
+        return copy;
+    }
+
     // == operator
     bool operator==(Student s){
         if(this == &s){
@@ -116,7 +128,7 @@ public:
     //postfix ++
     Student operator++(int){
         Student copy = *this;
-        this->age += 1;
+        this->age++;
         return copy;
     }
 

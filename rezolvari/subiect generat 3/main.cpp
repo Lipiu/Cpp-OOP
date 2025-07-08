@@ -7,6 +7,13 @@ int main(){
     int grades[] = {9, 8, 10};
 
     Student s("Marius", 3, grades, 20);
+    
+    int* getter_test = s.get_grades();
+    for(int i = 0; i < s.get_no_grades(); i++){
+        cout << "Grade: " << (i+1) << ": " << getter_test[i] << endl;
+    }
+    
+
     Student s2 = s;
 
     if(s == s2){
@@ -37,6 +44,8 @@ int main(){
     s4 = s;
 
     cout << s4;
+
+    cout << endl;
 
     return 0;
 }
