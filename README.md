@@ -6,7 +6,7 @@
 - **Sunt rezolvari intre nota 7-10**
 - **Evaluare pentru 5:** la examen/restanta trebuie sa va faceti o clasa care contine:
   - `Parametrii` de tip const/static (de obicei doar unul din astea dar puteti avea si ambii) si un camp dinamic `obligatoriu`: de obicei int* sau char*.
-  - Constructor fara parametrii, constructor cu parametrii (trebuie sa includa neaparat tipul de data **dinamic**), copy constructor, destructor, getteri/setteri si sa fie functionali (testati in main).
+  - Constructor fara parametrii, constructor cu parametrii (trebuie sa includa neaparat tipul de data **dinamic**), copy constructor, destructor (care sa faca dezalocarea memoriei dinamice corect), getteri/setteri si sa fie functionali (testati in main).
   - **OBLIGATORIU:** implementati 2 operatori si sa functioneze **(pentru 5)**
     - Daca nu va merge un operator o sa va pice :(
 - **Pentru nota mai mare de 5:**
