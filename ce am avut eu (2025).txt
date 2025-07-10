@@ -1,0 +1,14 @@
+La restanta eu am avut:
+
+PENTRU 5:
+clasa Laboratory cu camp dinamic char*
+un camp static
+constructor, destructor (care sa dezaloce corect memoria dinamica), copy constrcutor, getteri/setteri care sa aloce memoria corect pentru char*
+operatorul - pentru sacadere de tip obiect - valoare
+operatorul ++ postfix
+
+PENTRU NOTA MAI MARE (peste 5)
+sa arat relatia has a dintre clasa Laboratory si o clasa definita de mine la alegere
+sa fac o functie care sa ia primul cuvant de dupa spatiu in numele Laboratory
+sa explic ce inseamna cand o functie ia parametrul prin valoare (by value) si care sunt avantaje/dezavantaje
+sa fac o functie care scrie obiectele intr-un fisier
