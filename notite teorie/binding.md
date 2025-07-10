@@ -19,7 +19,7 @@
 * **Mechanism:**
     * The compiler knows exactly which function to call based on the static type of the expression, and it emits a direct call instruction (or inlines the code) into the object file.
 ##
-**EXAMPLE:**\
+**EXAMPLE Early Binding:**\
 #include <iostream>\
 struct Base {\
     void foo() { std::cout << "Base::foo\n"; }\
@@ -40,7 +40,7 @@ int main() {\
 * **Mechanism:**
     * When you declare a function virtual in a base class, C++ creates a vtable (virtual-function table) for each polymorphic class. Objects carry a pointer to their class’s vtable. At run time, a call through a base-class pointer/reference looks up the correct function in the vtable of the actual (derived) object.
 ##
-**EXAMPLE:**\
+**EXAMPLE Late Binding:**\
 #include <iostream>\
 struct Base {\
     virtual void foo() { std::cout << "Base::foo\n"; }\
