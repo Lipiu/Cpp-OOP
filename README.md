@@ -8,7 +8,7 @@
   - **OBLIGATORIU:** implementati 2 operatori: sa functioneze si sa ii testati in main **(pentru 5)**
     - Daca nu stiti cum sa faceti operatorul/operatorii sau nu va merge un operator o sa va pice :(
 - **Pentru nota mai mare de 5 (ce va poate pica):**
-  - functii care sa functioneze bazat pe obiectul pe care il aveti. Eu am avut o functie care sa printeze primul cuvant inainte de spatiu si una care sa scrie in fisier dar puteti avea basically orice functie.
+  - functii care sa functioneze bazat pe obiectul pe care il aveti.
   - inheritance, polymorphism.
   - sa explicati concepte (ce e nullptr, ce e pointerul this, diferenta dintre functii care au parametru prin valoare sau reference, has a/is a relationship, early/late binding) etc si sa demonstrati in main.
   - Bafta!!!!
