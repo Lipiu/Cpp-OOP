@@ -1,6 +1,6 @@
 # Repo pentru POO
 
-- **Subiectele sunt luate de aici si rezolvate de mine (pe langa rezolvarile care sunt aici):** -> https://github.com/Shad0wYG/OOP-refresher
+- **Subiectele sunt luate de aici: https://github.com/Shad0wYG/OOP-refresher si rezolvate de mine (pe langa rezolvarile care sunt deja in acel repo):**
 - **Sunt rezolvari intre nota 7-10**
 - **Evaluare pentru 5 (toate implementarile trebuie sa fie functionale si sa nu aveti erori):** la examen/restanta trebuie sa va faceti o clasa care contine:
   - `Parametrii` de tip const/static (de obicei doar unul din astea dar puteti avea si ambii) si un camp dinamic `obligatoriu`: de obicei int* sau char* dar puteti sa aveti si alt tip, de ex. float, double.
